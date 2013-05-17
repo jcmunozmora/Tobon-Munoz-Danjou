@@ -1,0 +1,18 @@
+\contentsline {section}{Acknowledgments}{iii}
+\contentsline {section}{Abstract}{iv}
+\contentsline {section}{\numberline {1}Introduction}{1}
+\contentsline {section}{\numberline {2}Institutions, violence and illicit crops}{4}
+\contentsline {section}{\numberline {3}Empirical framework}{7}
+\contentsline {subsection}{\numberline {3.1}Data}{8}
+\contentsline {subsection}{\numberline {3.2}Descriptive statistics}{10}
+\contentsline {subsection}{\numberline {3.3}Estimation strategy}{13}
+\contentsline {subsection}{\numberline {3.4}Results}{16}
+\contentsline {subsection}{\numberline {3.5}Causality tests}{18}
+\contentsline {section}{\numberline {4}Robustness analysis}{19}
+\contentsline {subsection}{\numberline {4.1}Overidentification tests}{19}
+\contentsline {subsection}{\numberline {4.2}Autocorrelation tests}{20}
+\contentsline {subsection}{\numberline {4.3}Political institutions}{21}
+\contentsline {subsection}{\numberline {4.4}Alternative samples}{21}
+\contentsline {section}{\numberline {5}Concluding remarks}{22}
+\contentsline {section}{References}{23}
+\contentsline {section}{Appendix: System GMM estimator}{29}

@@ -1,0 +1,13 @@
+\select@language {english}
+\contentsline {section}{\tocsection {}{1}{Data preparation}}{3}{section.1}
+\contentsline {subsection}{\tocsubsection {}{1.1}{Formality Index}}{3}{subsection.1.1}
+\contentsline {subsubsection}{\tocsubsubsection {}{1.1.1}{Cadastral information in Colombia}}{3}{subsubsection.1.1.1}
+\contentsline {subsubsection}{\tocsubsubsection {}{1.1.2}{Data cleaning}}{3}{subsubsection.1.1.2}
+\contentsline {section}{\tocsection {}{2}{Extra descriptive statistics }}{3}{section.2}
+\contentsline {section}{\tocsection {}{3}{Static Model}}{3}{section.3}
+\contentsline {section}{\tocsection {}{4}{System GMM}}{3}{section.4}
+\contentsline {subsection}{\tocsubsection {}{4.1}{Biases of standard panel data estimators}}{3}{subsection.4.1}
+\contentsline {subsection}{\tocsubsection {}{4.2}{Difference GMM estimator}}{4}{subsection.4.2}
+\contentsline {subsection}{\tocsubsection {}{4.3}{System GMM estimator}}{5}{subsection.4.3}
+\contentsline {subsection}{\tocsubsection {}{4.4}{Multivariate models}}{6}{subsection.4.4}
+\contentsline {subsection}{\tocsubsection {}{4.5}{Optimal GMM and relevant tests}}{7}{subsection.4.5}

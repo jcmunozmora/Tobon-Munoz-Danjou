@@ -1,0 +1,310 @@
+\documentclass[12pt,a4paper,english]{article}%
+
+\usepackage{enumerate}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+	
+\usepackage[nohead]{geometry}
+\usepackage[singlespacing]{setspace}
+\usepackage[bottom]{footmisc}
+\usepackage{indentfirst}
+
+\usepackage{endnotes}
+\usepackage{graphicx}%
+\usepackage{rotating}
+\usepackage{amsfonts}
+
+\usepackage{authblk}
+
+
+\usepackage[colorlinks=true,citecolor=black,linkcolor=black,urlcolor=black]{hyperref}
+\usepackage{multimedia}
+\usepackage{multirow}
+\usepackage{rotating}
+\usepackage{booktabs}
+\usepackage{tikz}
+
+
+\usepackage[nohead]{geometry}
+\usepackage[singlespacing]{setspace}
+\usepackage[bottom]{footmisc}
+\usepackage{indentfirst}
+\usepackage{endnotes}
+\usepackage{amssymb}
+
+\usepackage{caption}
+\usepackage{appendix}
+\usepackage{longtable}
+\usepackage{rotating}
+\usepackage{epigraph}
+\usepackage{appendix}
+\usepackage{lscape}
+\usepackage{subfig}
+\usepackage{float}
+
+\usepackage[applemac]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{apacite}
+\usepackage[colorlinks=true,citecolor=black,linkcolor=black,urlcolor=black]{hyperref}
+\usepackage{epigraph}
+
+\captionsetup{font={normalsize,bf}}
+\graphicspath{{tables/}{/data/Informality/graphs/}}
+
+\usepackage{endnotes}
+
+\usepackage[english]{babel}
+%\addto\captionsenglish{
+%\def\figurename{Map}
+%}
+
+\newcommand{\tables}{/data/Informality/results/}
+
+
+\newcommand{\goestable}[1]{\begin{center}[Table \ref{table_#1} goes about here]\end{center}}
+\newcommand{\goesmap}[1]{\begin{center}[Map \ref{map_#1} goes about here]\end{center}}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\begin{document}
+
+
+\begin{center}
+\textbf{{\huge Do weak institutions increase illegal crops?: } \\ \Large Evidence for Colombia. }\\[1.5cm]
+
+{\begin{tabular}{cc}
+Juan Carlos Mu\~noz-Mora\footnote{European Center for Advanced Research in Economics and Statistics -ECARES . Universit\'e Libre de Bruxelles. 50, Avenue Roosevelt CP 139, 1050 Brussels, Belgium  e-mail:\textit{juan.carlos.munoz.mora@ulb.ac.be}.} & Jesse Willem d'Anjou \footnote{Center for European Research in Microfinance, Universit\'e Libre de Bruxelles. 50, Avenue Roosevelt CP 114, 1050 Brussels, Belgium, e-mail:\textit{jesse.w.d.anjou@gmail.com}.}
+\\ 
+ECARES - ULB & CERMI - ULB\end{tabular}}\\[2.5cm]
+
+{\large Draft Version }\\
+{\emph{Institutions and Development (Professor: Gerard Roland)}}\\
+\large \today 
+\end{center}
+
+\textbf{Abstract} % ORGANIZAR %.
+\\[0.5cm] \begin{footnotesize}
+This paper aims to analyze the relationship between the existence of informal property rights in the land tenure, and the expansion of coca crop plantations. We hypothesize that informal property rights in the land tenure increase the willingness to take part on illegal activities, due to the absence of strong repercussions in the form of regulation. Furthermore, illegal actors could take control over the land more easily. We use a unique data set on informal property rights built by Ibanez and Munoz (2010), using the national cadastral information for Colombia in the period 2000-2010. In particular, we use the Informality Property Rigths index which consists in the ratio between the cadastral area without any legal title over total cadastral area. Results suggests a positive relationship between having ever experienced illegal crops in the period 2000-2008, and the average in the informal property rigths index, indicating a strong relationship between informality and coca crops. With all controls included, a shift in the informality property index of one percent increases the probability of having experienced coca crops with 0.39 percent. This relation is robust for the inclusion of different specificationa. These results contribute to the understanding of how institutional weakness could be increase the probability of starting and staying in illegal activities, which implies that the eradication policies have to be accompanied by formalization of the properties rights.
+\end{footnotesize}
+\\[0.5cm]
+\textbf{Keywords:} Institutions, armed conflict, property rights. \\
+\textbf{JEL Codes:} D02, D74, O17, P14, P37, Q15
+
+\pagebreak%
+
+\onehalfspacing
+\renewcommand{\thefootnote}{\arabic{footnote}}
+\addtocounter{footnote}{-2}
+
+
+\section{Introduction}
+
+Institutions have recently become an important factor explaining  economic outcomes such as poverty, development, growth, inequality, among others (Acemoglu, Johnson, and Robinson, 2001; Acemoglu and Robinson, 2010; Acemoglu and Verdier, 1998; Gorodnichenko and Roland, 2011a). Institutions can be defined as the rules of the game in a society, or the rules under which human interaction develops. Therefore, these rules yield incentives in human exchange (North, 1990). As an important form of institutions, property rights have been the central focus in a number of studies (Acemoglu and Verdier, 1998). Property rights form part of the spectrum of economic institution, which determine the incentives and the constraints on economic actors, the distribution, and shape economic outcomes. They can therefore be seen as social decisions, chosen for their consequences (Grossman and Kim, 1995; Grossman, 2001; Acemoglu, Robinson, and Johnson , 2004).  Through well defined land property rights, societies establish the rules and obligations under which land is to be used, controlled and transferred among people. It is difficult for a state to enforce these rights when the administration is lacking and only informal agreements and relationships exist among the local people concerning land (Deininger et al., 2007)\footnote{Acemoglu and Verdier (1998) argue that the protection of property rights is commonly acknowledged as a central obligation of the state by classical political philosophers such as Karl Marx, David Hume, and Robert Nozick. Furthermore, social scientists such as North and Thomas (1973) and Rosenberg and Bridzell (1989) stress the importance of secure property rights in the development of western societies (Acemoglu and Verdier, 1998).}. 
+
+Therefore, if property is seen as also having a social function and therefore obligations towards the collective (Duguit, 1920), it will be difficult without clearly defined, administrated, and enforced land property rights (Demsetz, 1967). Furthermore, under informal property rights in rural areas, the probability of being victims of conflict or take part in illegal activities increase (André and Platteau, 1998; Goldstein and Udry, 2008; Deininger, Ali and Yamano, 2008). For instance, in a context of internal conflicts where  activities such as asset appropriation is a common and effective strategy for increasing financing means for the conflict's actors, an informal property rights structure could increase the likelihood of being victim (de Soysa, 2002; Korf, 2005,Ibanez, 2006). In the case of Colombia, land property rights have not fully developed yet. After several attempts of rural reforms, the government's effort to strengthen laws and regulations regarding land ownership appeared unsuccessful\footnote{For a general review of the land issue in Colombia see Ibanez and Munoz (2010).}. During the twentieth century, Colombia was subject to numerous peasant land invasions which characterized the colonization process in most of the territory. As a result, an extensive informal properties rights system was created around the entire country. The Government was lacking an effective institutional procedure to claim ownership rights, which resulted in an inefficient and incomplete titling and registration system (Binswanger et al., 1995; Deininger and Feder, 2001). 
+
+A number of recent studies have looked into the effects of this lacking property right system and have found that it was positively related to crime and armed conflict in Colombia. Social phenomena such as: forced displacement, land appropriation, illegal recruitment, among others; seem to be more often in regions with a weakly institutions and informal land property rights (Deininger, 2003; Velasquez, 2007; Fernandez, 2010). Moreover, a number of studies have found that the expanding areas used for coca plantation are mainly situated in zones characterized by low living standards, agricultural underdevelopment and the presence of paramilitary and guerrillas (Carvajal, 2002; Díaz and Sánchez, 2004; Rocha $\&$ Ramírez, 2005; Rocha and Martinez, 2011). According to Rocha and Martinez (2011), the total area of land in Colombia which was used for coca plantations was approximately 767 hectares in 1952. This coca production was mainly targeted towards the consumption of indigenous communities. However, since 1952 cocaine use in the world has increased rapidly, with many consequences for the coca production in Colombia. In 1981, the total area has increased to 2500 hectares, while in 1990 this number reached 180 000 hectares (Rocha and Martinez, 2011). This exponential growth was further fueled by the anti-drug production campaign in Peru in collaboration with the United States. This not only decreased the coca paste supply to the processing factories in Colombia, but it also cut off the financial sources of the guerrillas after the fall of communism (Thoumi, 2002). 
+
+Surprisingly, now study has looked into the relationship between the effects of the existence of a particular institution, informal property rights, and the plantation of coca crops. A lacking formal property rights system could help to explain the expansion of coca crop plantations in a number of ways. Firstly, if there is now sense of control and regulation of the state over the land, farmers may choose to plant more profitable illegal crops instead of for example coffee or export crops (i.e. economical motive). Secondly, without a formal system, it could be easier for guerrillas and paramilitaries to take over the land and use it for coca plantations (i.e. conflict motive). Thirdly, since effective regulation and control might miss in an informal property right system, farmers may look for protection from guerillas and paramilitaries against land invasions, for which they have to grow crops in exchange (i.e. conflict motive).    
+
+The aim of this paper is to fill this gap by analyzing the relationship between informal property rights in the form of land, and the expansion of coca crop plantations. We hypothesize that informal property rights in the land tenure increase the willingness to take part in illegal activities, due to the absence of strong repercussions in the form of regulation. Furthermore, illegal actors could take control over the land more easily. We will therefore provide empirical evidence obtained through micro-level data. This relationship is important since it could help to understand the determinants of the expansion of coca crops, which in turn could steer policy programmes aimed to decrease coca crop plantations and production. We use a unique data set on informal property rights built by Ibanez and Munoz (2010), using the national cadastral information for Colombia in the period 2000-2010. In particular, we use the Informality Property Rigths index which consists in the ratio between the cadastral area without any legal title over total cadastral area. The information for the coca crops is provided by United Nations Office on Drugs and Crime\footnote{The project called Sistema Integrado de Monitoreo de Cultivos Ilícitos - SIMCI -, consists on the identification of illegal plantation trough satellite images.}. We also include geography, political, land and social controls.  
+
+Results suggests a positive relationship between have ever experienced illegal crops in the period 2000-2008, and the average on informal property rigths index, This indicates that there is a strong relationship between informality and coca crops. With all controls included, if informality property increase in one percent the probability of having experienced coca crops increase in 0.39 percent. This relation is robust to the inclusion of different specification. These results contribute on the understanding of how institutional weakness could be increase the probability of starting and staying in illegal activities, which implies that the eradication policies have to be accompanied of formalization on the properties rights. These results area robust to the inclusion of violence controls.
+
+This paper is structured in six sections, including the introduction. In the second, the academic literature on this specific topic will be reviewed. Section three will introduce the empirical strategy, which is followed by a description of the data. In the fifth we introduce the results.  Finally, we will conclude and mention points of discussion, as well as policy implications. 
+
+\section{Informal property rights, violence and illegal crops: an economic framework.}
+
+Although the effects of property rights as institution have been studied on a number of aspects, analyses on the connection on coca crop plantations has so far been absent. Nevertheless, multiple studies have shown that institutional weakness in the definition of land property rights has a positive and significant influence on the evolution of conflict or violence, especially in rural areas (André and Platteau, 1998; Goldstein and Udry, 2008; Deininger, Ali and Yamano, 2008).
+
+There is evidence to suggest that illegal activities and conflict mushroom under weak institutions. Collier and Hoeffler (2004) argue that the modern civil wars are sustained in large part by economic forces such as easy financing for rebel groups and the opportunity to extract rents from economic activity. Therefore, areas with resources wealth and undefined land property rights becomes attractive for illegal actors. Evidence for Colombia and Sri Lanka show that the displacement forced, illicit crops, asset appropriation, among other, are more likely in areas with natural resources wealth such as gold and oil and high informality in the land property rights  (Deininger et al., 2007, Binswanger et al., 1995; Deininger and Feder, 2001;De Soysa,2002; Korf,2005). 
+
+Nevertheless, the empirical evidence in Colombia has not a clear direction about the interaction among informal property rights, illegal crops and conflict. One study argues that illegal crops are the results of the conflict; for instance, Díaz and Sanchez (2004) utilized a logit model with empirical data stemming from Colombia to estimate the probability of coca plantations in a municipality\footnote{The variables which were included contained geographical variables (e.g. water availability, extension of the municipality, environmental conflicts in land use), social variables (e.g. percentage of rural population, quality of life index), institutional variables (e.g. armed groups activity, fiscal effort of the municipality, credit availability, technical assistance offer, infrastructure), and economic variables (e.g. income per capita, agricultural product prices).}.  The findings of the authors suggest a positive relationship between the presence of coca crops and water availability, the extension of the municipality, environmental conflicts in land use, the percentage of rural population, and armed group activities. The remaining variables show a negative effect on the presence of illegal coca crops. 
+
+Rocha and Ramírez (2005) confirmed a similar relationship. They estimated the probability of having illegal armed activity in each municipality by a probit model that explained the presence of illegal armed forces through four vectors of municipality variables: geographical and spatial characteristics, efficiency of law enforcement against drug dealers, production activities and wealth, and socioeconomic characteristics (e.g. GINI coefficients, unfulfilled basic needs index, and education). Authors find that the existence of coca leaf plantations can be explained accounting for approximately 70 percent of the variance by the presence of illegal armed groups, more specifically by armed conflict in the year 2000. However, although Rocha and Ramírez (2005) address the possibility of endogeniety between conflict and illicit crops, their solution and instruments are not successful. Furthermore, even though both works do not include an control for the properties rights, they provides explanation how informal property rights could be affected either by the probability of having presence of conflict and illegal crops. 
+
+A different relationship is studied by Velásquez (2007) who analyzed whether the formality of property rights were a determinant of the military strategy of armed groups. This author found a negative relation between the proportion of formal property rights, and the intensity of the conflict. The author argue that larger land lots constitute a more attractive objective for armed actors, because it is less expensive to confront only one owner of a large land lot. This depends, however, on the strategy followed by the illegal armed group and the specific interests of the group.  Velásquez (2007) argues that endogeneity in this case will not form an issue since armed groups decide to attack municipalities based on a function of expected revenues through costs and benefits. Since the armed groups cannot influence the formality of property rights when they decide to attack, the variable on informality can be seen as exogenous. To prove her argument, the author utilizes the level of formality in property rights in 1985 as an instrumental variable. This relation between informal property rights and violence is historically held. 
+
+Fernández (2010) looked at the relationship between historical violence and property rights in Colombia using IV approach which is the exact opposite direction of what Velásquez studied \footnote{The period in the history of Colombia called “La Violencia" which will later be discussed in more depth, was a period of extreme violence running from 1946 until 1953. This violence was caused by inter-party tensions, and caused the death of approximately 144.500 people.}.  A major challenge in this endogeneity. The violent periods during \emph{la violencia} could be correlated with the original situation of property rights. Moreover, the violence could also be correlated with omitted variables that could also have influenced the institutional development and level of formality in property rights. 
+
+Two instruments are suggested to solve these issues. The first instrument measures the level of political confrontation in each municipality in the period before 1946, which according to the author is correlated with the probability of violence after 1946 while it is not correlated with formality in property rights. A second instrumental involves the level of illiteracy for each municipality before “La Violencia". As for the results, the author reports that municipalities that were affected during the period of  “La Violencia" had higher levels of informality in property rights, specifically 2.6 percentage points above those that were not affected by the violence in that period.
+
+In sum, even in presence of the endogeneity between political conflict and illicit crops, is clear that informal property rights has had a strong effect on the origin and persistence of the civil conflict and illicit crops in Colombia. However, it is still not clear how informal property rights could be affect the likelihood of having illegal crops, even in absence of political conflict. In particular, when illegal crops are understood as complex social phenomenon that involve the society as a whole. Therefore, is not necessary true that all the explanation about why a municipality is willing to consider illegal crops as an option is associated to the presence of conflict; other factors such as: poverty, income inequality, weak institutions, among others, could also affect (Mejía and Restrepo, 2008; Mejía, 2008). Clearly, all this factors are related itself with the presence of conflict, however, it is not he unique channel. This facts create a several empirical challenge that will be study in depth in the empirical strategy section. 
+
+\section{Informal property rights, conflict and illegal crops in Colombia: a short history.}
+
+In the colonial period of Colombia, the Spanish introduced the concept of “morada y labor” (dwell and work), which contemplates that land should be assigned to the person who dwelled and worked on his plot (Hirschman , 1965). This concept marked the beginning of the evolution of the land distribution structure. Up till the nineteenth century, this system steadily distributed the land, although of course the majority of land was controlled by the Spanish and large landowners. However, the system only covered a small part of the total land area. Furthermore, a high percentage of the land, both in large and small land holdings, lacked formal property titles (Oquist, 1980).This availability of uncharted land minimized social tensions in the society, since laborers could become landowners easily (Hirschman, 1965). However, the ones who benefited the most from this system were the large landowners and powerful and influential groups, who were able to enlarge and consolidate their land plots which exist up to today (LeGrand, 1994). These groups were advantageous in this process due to their close link with formal state institutions (in charge of granting property titles), as well as their access to the information required to claim lands and capital to cover the transaction costs (Binswanger et al., 1995; Ibánez and Muñoz-Mora; 2010). 
+
+In the 1920s, disputes started arising between large landowners and squatters, which resulted in offensive and coordinated tactics by the peasants such as attacks (Hirschman, 1965; LeGrand, 1994). In response, law 200 was developed in 1936 by the state. This law was meant to clarify property titles, introduce stricter regulations about the eviction of sharecroppers, encourage the productive exploitation of land (with the possibility to be expropriated), and reform the land (Ibánez and Muñoz-Mora, 2010). However, the poorly designed law had opposite results, increasing tensions between the peasants and large landowners (Binswanger et al., 1995). Land seizures were an everyday occurrence in this period, due to uncertainty over property rights and the absence of state institutions in certain regions (Ibánez and Muñoz-Mora, 2010). Areas with doubtful property rights of landowners, newly excavated land, and areas occupied by indigenous groups were more susceptible to these land conflicts (Oquist, 1980). Also De Janvry and Sadoulet (2001) state that the weak social ties in certain regions, as well as the absence of state institutions, caused social and legal controls over land to be nonexistent, which in turn facilitated land seizures and intensified the conflict.
+
+The first major conflict during the $20^{\text{th}}$ century, dubbed "\emph{la violencia}", generated decades later favorable conditions for the emergence of guerrillas groups \footnote{Colombia have had several guerrillas groups since of the last century. The most important are: The Revolutionary Armed Forces of Colombia –FARC– (betters known per its short name in Spanish), was born in 1964, as the military wing of the Colombian Communist Party. National Liberation Army – ELN – (in short name in Spanish), was born in 1965, as a radicalization of the liberal party (Offstein,2003).}. Until eighties, the armed conflict in Colombia had all the characteristics of a political conflict. Guerillas groups, with communist tendency , wanted to take the power through armed attacks to all government institutions. However, when the coca cultivation came out, the conflict took a different dynamic, particularly, due to the   amounts of money involved in this growing business.  The former territories under control of guerrillas became perfect scenarios for illicit crops. But the problem did not remain only as a confrontation between guerrillas and government as a third actor took part of the conflict, the paramilitary groups founded by drug dealers traditional landowners that did not share interests with guerrillas and decided to create their own private army (Reyes,1994). 
+
+During the 1970s and 1980s, public policies were still mainly in favor of the large landowners, while frontier lands with poor soils in remote zones were distributed to peasants (Ibáñez and Muñoz-Mora, 2010). However, the majority of this colonized land did not have formal property titles. According to Fajardo (1994), only 1.4 million of the 3.4 million colonized hectares of land had been granted property titles by 1980. This period also saw new dynamics arising. The emergence of drug production meant changes for the traditional dynamics of the land market in terms of the ownership and prices of land. This caused large-scale ownership to decline, while medium-sized ownership consolidated (Ibánez and Muñoz-Mora, 2010). 
+
+The drug production became an increasing influence on the land system in Colombia. Internal land conflicts intensified as a result of the emergence of paramilitary groups, which were funded by drug production revenues. Ibánez and Muñoz-Mora (2010) argue that land and territory have been at the center of all Colombian armed conflicts over the years in multiple ways: military disputes for territorial control, infrastructure creation for arms and drugs transport and production, and exploitation of natural resources (Ibánez, 2008). Moreover, the participation of armed groups in drug trafficking meant accumulation of land to move to peripheral regions, where illegal crops can be produced with less interference or control (Reyes, 2009). The strategies used by the paramilitaries to exert territorial control and accumulate land have caused, as they did during the period of “La Violencia”, millions of peasants to be removed from their lands (Ibánez and Muñoz-Mora, 2010).
+
+In the 1960s and 1970s, Colombia witnessed a development of the drug-trafficking activities from being small and dispersed to powerful, highly organized drug cartels in the 1990s (Dugas, 2006).  While the production and transportation was initially focused on marijuana, cocaine quickly became the main focus of interest of the cartels in the 1980s. The largest cartels were the Medellín and Cali cartels. These cartels controlled over 75 percent of the total cocaine production, employed 100.000 Colombians, and saw an annual income of between \$ 2 and \$ 4 billion. In the 1990s, successful campaigns of the state in combination with the United States caused the dismantling of the two cartels. However, this did not result in the slowing-down of drug trafficking. It did result in a more fragmented drug industry, where small- to medium-sized organizations took over the land and production of the large cartels. In addition, the production of opium poppy increased which was used to create heroin (Dugas, 2006).
+
+In the 1980s and 1990s, the state was increasingly challenged by the drug cartels which used violence against the state and bribed the state officials to protect their business. Some of the members who had to carry out the enforcement and violent tactics of the cartels were trained in the special paramilitary schools. Furthermore, the cartels partly financed and organized right-wing paramilitary groups. This was not only to protect the drug trafficking investments, but also to create a working relationship with the policy and military, which partly neutralized the threat of state repression. Other tactics to decrease the state’s pressure was to bribe the people in power, such as high ranking police officials, politicians, army officials, etc. Furthermore, by development investments to the poor local communities, the cartels established a firm base if loyalty among the population (Thoumi, 2002; Dugas, 2006). 
+
+The last attempt to make a sort of agrarian reform came up in 1994, with the passing of law 160. It was based on market mechanisms for the transfer of land, instead of on the expropriation of unproductive lands. Eligible peasants had to identify their plot of land, negotiate a price with the landowner, and administer the transaction with the Colombian Institute of Rural Development. Moreover, the Colombian government subsidized the purchase up to 70 percent (Deininger, 1999).
+
+By the end of 2008, only 31.2 percent of the peasants which were displaced in Colombia had formal property titles, which caused large problems when trying to recover abandoned properties (Ibánez and Muñoz-Mora, 2010). Displacement and the seizure of land occurred especially in areas of recent colonization, with a low density of population, recent settlement, weak social cohesion, weak state control and protection of formal property rights, and informality (Lorente, Salazar, and Gallo, 1985). Reyes (2009) argues that drug traffickers and paramilitary groups used this institutional void to guarantee the rights to buy lands in areas with a strong presence of the guerrilla. Furthermore, the control of these groups over local authorities and institutions responsible for regulating land markets further facilitated the seizure and transfer of land to the groups. 
+
+\section{Informality property rights and illegal crops: empirical strategy.}
+
+In the current paper, the relationship is analyzed between the existence of informality in property rights and illegal drug plantations. As has been presented above, both a level of informality exists in Colombia, as well as a large drug trafficking economy. Previous papers have looked into the relationships between violence and property rights, as well as violence and illegal drug production, but no study to our knowledge has looked into the relationship tested here. Therefore, we use the approach used by Rocha and Ramírez (2005) and Díaz and Sanchez (2004), where we want to identify the determinant of having illicit in a given year. The variables which were included by the author contained geographical variables (e.g. water availability, extension of the municipality, environmental conflicts in land use), social variables (e.g. percentage of rural population, quality of life index), institutional variables (e.g. armed groups activity, fiscal effort of the municipality, credit availability, technical assistance offer, infrastructure), and economic variables (e.g. income per capita, agricultural product prices). 
+
+However, regarding the endogeneity issues we proposed an alternative solution. In particular, we are going to handle the relationship between illegal crops and conflict exploring the set of instruments used by Fernandez (2010). Therefore, we propose use the literacy rate in 1951 as determinant of the current conflict due to much part of the conflict in Colombia has been focused in the same areas for years, in particular, in 1960's the power of illegal groups has more influences in municipalities with lower education; after years, these places where characterized by high rate of homicide (Fernandez, 2010). However, this variable is exogeneous to the informality property rights because it is due to historical reason as was explained above.
+
+Now, we consider that informal property rights is exogenous to the illicit crops. Following the same logic as Velasquez (2010), the empirical evidence shows that the informal property rights are due to centuries of weak institutions, whereas drugs is a relatively new problem in Colombia. Therefore, the illegal crop are not able to increase the informality by itself. However, this illegal structure might create a context where there are more incentive to stay in the informality, which could create a endogeneity problem from a dynamic perspective. Nevertheless, using a cross sectional approach solves this sources of endogeneity.
+
+Therefore, the equation to estimate a cross sectional model is given by:
+
+\begin{equation}
+Pr(coca_i)=\alpha+\beta_1 \text{Informality}_i + \beta_2 \text{Violence}_i+\beta_3 G_i+ \beta_4 P_i +\beta_5 L_i + 
+\beta_6 S_i + \epsilon_i  
+\end{equation}
+
+Where the dependent variable is a binary which is one when a municipality has experieced coca crops in a given period. $\text{Informality}_i$ is the informality land property rights index. $\text{Violence}_i$ is the control for conflict, $G_i$ is the vector of geographical control, $ P_i$ vector of political variables,  $L_i$ land tenuare structure and $S_i$ is a social controls. Next section introduces in detail each variable and its sources.
+
+\subsection{Data and measurement variables}
+
+The information for the coca crops was provided by United Nations Office on Drugs and Crime\footnote{The project called Sistema Integrado de Monitoreo de Cultivos Ilícitos - SIMCI -, consists on the identification of illegal plantation trough satellite images.}. We have information for the period between 2000 and 2008, we built a binary variable which measures the existence coca crops in a given municipality in the period of 2000 – 2008 if it had experienced this at least in one of these years.
+
+The data for this analysis stems from the information collected by the cadastral registry of the Geographical Institute Agustín Codazzi (IGAC). Since the 1970s, this institution collects on rural and urban landownership for all the municipalities in Colombia, except for the municipality of Antioquia (have their own data collection system). The data before 1983 consisted of limited information on each property (i.e. land plot and location). After 1983 a system of cadastral files was created, which contained richer data. This includes data about the owner, location, size of the plot, and constructed area, as well as information about detailed features of the structures and other characteristics of the land plot. Since 2000 this data was fed into an electronic database. 
+
+As input for our estimations, the raw cadastral data was cleaned to correct for input errors, missing data, and other inconsistencies. From the cleaned data, first all the non-private properties were filtered out of the dataset, which consisted for example of properties of the state, religious communities, indigenous communities, Afro-Colombian communities, and natural reserves. The end product was a dataset which contained information on all private properties in every municipality in Colombia (except for the municipality of Antioquia) for the years 2000 to 2009. This not only allowed us to identify each land plot, but also to identify whether there exist a legal title. 
+
+In Colombia, private ownership of land can be formally and informally arranged. Formal ownership involves the land to be identified through the cadastral, where additionally the title on the land is registered. Informal ownership lacks the formal title on the land and is only identified through the cadastral. Logically, formal ownership guarantees more secure ownership. Therefore, we measure the weakness of property rights (i.e. informality represents institutional weakness) by the proportion of area under informal ownership out the total area in the municipality. More specifically, the informality index for each municipality for the period of 2000-2008 is calculated by the yearly averages of the total cadastral area without any legal title divided by the total cadastral area (Ibánez and Muñoz-Mora, 2010).
+
+\begin{equation} \nonumber
+\emph{Informality Index}=\frac{\text{Cadastral area without legal title}}{\text{Total cadastral area}}
+\end{equation}
+
+As many previous papers have analyzed the relationship between coca crops and the influence of violence, we control for this effect by a separate variable. All the controls were obtained through the database of the Department of National Planning (i.e. Departamento Nacional de Planeación). In particular, we use the average homicide rate per 100000 habitants in the period of 2000 – 2008 for each municipality. Three other groups of control variables have been developed. The first group is the vector of geographical control variables, which control for the natural conditions in each municipality. This includes the average altitude of the land (meters above sea level), the total surface area (total hectares), a dummy when the municipality belongs to the Adina region, a dummy when the municipality belongs to the Pacifica region, and the distance to the nearest market (km).
+
+A second vector contains land controls, through which the land’s quality and the property structure are tested. The first variable is the land gini index, which will be utilized to assess the quality of the land (data obtained through the Unidad Agricola Familiar). This index provides the minimum number of hectares that one rural household would need to obtain a basic needs level. Therefore, in areas with a higher quality of land, the number of hectares will be less than in zones with a low quality of land. The second variable in this group is the average hectares of land per owner  as an average in each municipality.  The last vector contains the political controls. This includes the average investment on education, the average investment in justice per capita, and the average number of agricultural loans.
+
+\subsection{Descriptive statistics}
+
+Figure 1 shows the geographic distribution of the average on number of hectares in coca per municipality and the average informality index.
+
+\begin{figure}[H] \label{fig1}
+\caption{Average htas on coca (2000-2008) and Informality index.}
+\begin{center}
+\includegraphics[width=4in,height=5in]{g_2}
+\end{center}
+\captionsetup{font={footnotesize,bf,it}}
+  \caption*{Source: Authors based on UN(2010) and DNP (2011) }
+\end{figure}
+
+This map clearly shows that in certain municipalities the level of informality concerning property rights are still highly informal, with some municipalities showing over 50 percent of informality in the index. In special, in the pacific cost and the borders with Ecuador and Peru. On average, With respect to the coca crop fields, the map shows that the majority are concentrated in certain areas, which sometimes score high on the informality index as well, in particular, the level of informality is again statistically significant  much higher for municipalities that experienced coca crops (23 percent) (see table 1).
+
+Figure 2 shows the average number of years that each municipality has experienced coca crops between (2000-2008) on the left hand side by informality index quantiles.
+
+\begin{figure}[H]
+\caption{Mean of year with coca crops (2000-2008) by informality index quantiles.}
+\includegraphics[width=6in,height=3in]{g_1}
+\captionsetup{font={footnotesize,bf,it}}
+  \caption*{Source: Authors based on UN(2010) and DNP (2011) }
+\end{figure}
+
+Clearly we can identify that municipalities which are in the highest index informality index's (over the 80th quantile), have experienced coca crops 3.4 years more than those which are in the lowest quantiles. Moreover, municipalities with the informality index  above 90 \% has experienced coca, on average, 6 years. It suggests a preliminary intuitions on the potential relationship between this two variables.  The descriptive statistics further confirm the connection between the two main variables of the current paper. However, other variables prove to be of importance as well. Table 1 summarizes the data on all the variables. In the column on the left side the descriptives are presented of the municipalities that have not experienced coca crop plantations in the period of 2000-2008. On the right side, the information is presented of municipalities that have experienced the plantation of coca crops in these years. The difference between these two columns is shown in column three, in combination with the standard errors and the level of significance.
+
+Furthermore, per 100.000 habitants nine more homicides have occurred in the coca crops municipalities. A significant difference also exists with respect to the average altitude between the municipalities, where the coca crop municipalities are on average 463 meters lower than the other municipalities. In square kilometers the coca crop municipalities are also a lot larger (a positive and significant effect of 1100 km2). Furthermore, the coca crop municipalities are significantly less in the Andina region, and more in the Pacific region. Other differences that prove significant are the distance to the nearest market (further away for coca crop municipalities), the average plot size (larger for coca crop municipalities), the higher percentage of people below the poverty line in the coca crop municipalities, and the lower number of years on average people have been educated in these municipalities.  
+
+\input{\tables Table_1}
+
+\section{Results}
+
+In order to identify the real relationship between illicit crops and informal property rights we are going to estimate three different approaches. First, we estimate the simplest model using the informality property rights without violence control, the objective of the first estimation is therefore to see the effects of informality without the influence of violence with all its issues. Second, we include the homicide rate without any instruments; even though the papers by Diaz and Sanchez (2004) and Rocha and Ramirez (2006) found an effect of violence on coca crops, these analyses also proved that endogeneity is a large issue when assessing this relationship. Rocha and Ramirez (2006) discuss these issues the instruments suggested by them prove to be unsuccessful to rule out endogeneity. Third, we suggests an IV approach for violence using the Literacy Rate in 1951 proposed by Fernandez (2010). Each different specification is controlled by within and between heterogeneity through robust standard error estimated by Province cluster and fixed effect by Province\footnote{In Colombia, the political division as the municipality as the smallest unit, following by Departaments or Province.} Table 2 shows the results for the first model.
+
+\input{\tables Table_2}
+
+Three interesting aspects can be mentioned from this table. Firstly, in all models the effects of informality on coca crops prove to be positive and significant. Secondly, adding the different control vectors only mildly decrease the strength of the effect of informality. This indicates that there is a strong relationship between informality and coca crops. With all controls included, if informality property increase in one percent the probability of having experienced coca crops increase in 0.39 percent. Thirdly, the geographic controls and the socio-economic controls seem to have to strongest decreasing effect on the strength of the relationship of informality, with political controls actually increasing the effect of informality. Therefore, without including the variable of violence the first step of the probit model seems to give strong suggestions as to a positive and significant relationship between informality and the existence of coca crop plantations in a municipality. In table 3 the outcomes can be found of the second estimation in which the violence variable is included in the probit model. 
+
+\input{\tables Table_3}
+
+Surprisingly however, the results hardly change. With all controls included, the outcomes are still robust in terms of a positive and significant effect. The marginal contribution of the informality variable is 0.36 in explaining the probability of having experiences coca crops in a municipality. Furthermore, the violence variable seems to lose significance when all the controls are included. Apart from the limited significance, the positive relationship as confirmed by the papers by Diaz and Sanchez (2004) and Rocha and Ramirez (2006) turns out to be very small in combination with the effect of informality on coca crops. This small effect does not appear to change with more added controls. Moreover, the significance of the interaction term between these variables does not affirm an interaction. However, although the marginal effect of informality turns out lower when the violence variable is included in the estimation model, the overall variance the model explains turns out to be higher, adding up to explaining 41 percent in the variance of the probability of the existence of coca crops in a given municipality. Finally, Table 4 shows the first and the second step for the probit model using the instrumentation for Violence variable.    
+ 
+\input{\tables Table_5}
+
+The first stage for the instrument suggests that the instrument proposed by Fernandez (2010) is, indeed, a valid instrument for violence variables. However, the violence's results in the second step is different as we were expecting because the sign is opposite to the original. Nevertheless, Informality is still strong explanation variable for the presence of illicit crops, which shows the robustness in the relationship. 
+
+\section{Preliminary Conclusion}
+
+We analyzed the relationship between the existence of informality in property rights and illegal drug plantations.  There is evidence to suggest that illegal activities and conflict mushroom under weak institutions. Collier and Hoeffler (2004) argue that the modern civil wars are sustained in large part by economic forces such as easy financing for rebel groups and the opportunity to extract rents from economic activity. The areas with rich resources and undefined land property rights are more attractive to illegal actors, making social phenomena such as displacement forced, illicit crops, asset appropriation, etc. more likely. Previous papers have looked into the relationships between violence and property rights, as well as violence and illegal drug production, but no study to our knowledge has looked into the relationship tested in the current paper.
+
+In Colombia, land property rights have not fully developed yet. After several attempts of rural reforms, the government's effort to strengthen laws and regulations regarding land ownership appeared unsuccessful. Meanwhile, the drug production became an increasing influence on the land system in Colombia, witnessing a development of the drug-trafficking activities from being small and dispersed to powerful, highly organized drug cartels.  
+
+We follow to Rocha and Ramírez (2005) and Díaz and Sanchez (2004), where we want to identify the determinant of having illicit in a given year. However, the current paper takes one step further, combining the three elements of coca crops, informality, and violence in one study. The variables which were included by the author contained geographical variables (e.g. water availability, extension of the municipality, environmental conflicts in land use), social variables (e.g. percentage of rural population, quality of life index), institutional variables (e.g. armed groups activity, fiscal effort of the municipality, credit availability, technical assistance offer, infrastructure), and economic variables (e.g. income per capita, agricultural product prices). We use a unique data set on informal property rights built by Ibanez and Munoz (2010), using the national cadastral information for Colombia in the period 2000-2010. In particular, we use the Informality Property Rigths index which consists in the ratio between the cadastral area without any legal title over total cadastral area. The information for the coca crops is provided by United Nations Office on Drugs and Crime. We also include geography, political, land and socio-economic controls.  
+
+In order to identify the real relationship between illicit crops and informal property rights we are going to estimate three different approaches. First, we estimate the simplest model using the informality property rights without violence control. Second, we include the homicide rate without any instruments; even though the papers by Diaz and Sanchez (2004) and Rocha and Ramirez (2006) found an effect of violence on coca crops, these analyses also proved that endogeneity is a large issue when assessing this relationship. Third, we suggests an IV approach for violence using the Literacy Rate in 1951 proposed by Fernandez (2010). Results suggests that the effects of informality on coca crops prove to be positive and significant, even after including the instrumentation part. On average, if informality property increasea with one percent, the probability of having experienced coca crops increases with 0.39 percent. However, regarding violence, the positive relationship as confirmed by the papers by Diaz and Sanchez (2004) and Rocha and Ramirez (2006) turns out to be very small when combined with the effect of informality on coca crops.
+
+This results describe a interesting policy implication concerning the programmes against coca crop plantations and drug production in Colombia in general. These programmes should be complemented with a strong formalization process in the land property lands.
+
+
+\newpage
+
+\begin{footnotesize}
+\section{References}
+\begin{enumerate}
+\item	Acemoglu, D. and Verdier, T. (1998). ‘Property rights, corruption and the allocation of talent: a general equilibrium approach’, Economic journal, Vol. 108, No. 450, pp. 1381-1403.
+\item	Acemoglu, D. and Robinson, J.A. (2010). ‘Why is Africa poor?’, Economic history of developing regions, Vol. 25, No. 1, pp. 21-50.
+\item	Acemoglu, D., Robinson, J.A. and Johnson, S. (2001). ‘The colonial origins of comparative development: an empirical investigation’, American economic review, Vol. 91, pp. 1369-1401.
+\item	Acemoglu, D., Robinson, J.A. and Johnson, S. (2004). ‘Institutions as the fundamental cause of long-term growth’, NBER working paper, No. 10481, pp. 1-113.
+\item	André, C. and Platteau, J. (1998). ‘Land relations under unbearable stress: Rwanda caught in the Malthusian trap’, Journal of economic behavior and \item	Binswinger, H.P., Deininger, K. and Feder, G. (1995). ‘Chapter 42: power, distortions, revolt, and reform in agricultural relations’, in J. Behrmann and T.N. Srinivasan (eds.), Handbook of Development Economics. Elsevier science, pp. 2659-2772.
+\item	Carvajal, M.P. (2002). ‘Factores explicativos de la presencia de cultivos ilícitos en los municipio de Colombia’, Dissertation paper. Universidad de los Andes. Bogotá, Colombia.
+\item	De Janvry, A. and Sadoulet, E. (2001). ‘Access to land and land policy reforms’, UNU-Wider policy brief, No. 3, pp. 1-35.
+\item	De Soysa, I. (2002). ‘Paradise is a bazaar? Greed, creed, and governance in civil war, 1989-99’, Journal of peace research, Vol. 39, No. 4, pp. 395-416.
+\item	Deininger, K. (1999). ‘Making negotiated land reform work: initial experience from Colombia, Brazil and South Africa’, The World Bank policy research working paper, No. 2040, pp. 1-32.
+\item	Deininger, K. (2003). ‘Causes and consequences of civil strife - micro-level evidence from 
+Uganda’, The World Bank policy research working paper, No. 3045, pp. 1-36.
+\item	Deininger, K., Ali, D.A. and Yamano, T. (2008). ‘Legal knowledge and economic development: the case of land rights in Uganda’, Land economics, Vol. 84, pp. 593-619.
+\item	Deininger, K. and Feder, G. (2001). ‘Chapter 6: land institutions and land markets’, in B.L. Gardner and G.C. Rausser (eds.), Handbook of agricultural economics. Elsevier science, pp. 745-1209.
+\item	Deininger, K., Jin, S. and Nagarajan, H.K. (2007). ‘Land reforms, poverty reduction, and economic growth: evidence from India’, The World Bank policy research working paper, No. 4448, pp. 1-27.
+\item	Demsetz, H. (1967). ‘Toward a theory of property rights’, American economic review, Vol. 57, No. 2, pp. 347-359.
+\item	Diaz, A. and Sanchez, F. (2004). ‘Geografía  de los cultivos ilícitos y conflicto armado en Colombia’, Documento CEDE, No. 18, pp. 1-78.
+\item	Dugas, J.C. (2006). ‘Chapter 18: Colombia’, in H.E. Vanden and G. Prevost (eds.), Politics of Latin America: the power game. Oxford: Oxford university press, pp. 494-524.  
+\item	Duguit, L. (1920). Les transformations générales du droit privé depuis le code napoléon 21. Paris: librairie Félix Alcan.
+\item	Fajardo, D. (1994). ‘Chapter 4: la colonización de la frontera agraria colombiana’, in A. Machado (ed.), El Agro y la Cuestión Social. Bogotá: Tercer mundo editors, pp. 44-80.
+\item	Fernandéz, M. (2010). ‘Violencia y derechos de propiedad: el caso de la violencia en Colombia’, CEDE working paper, pp. 1- 40.  
+\item	Goldstein, M. and Udry, C. (2008). ‘The profits of power: land rights and agricultural investment in Ghana’, Journal of political economy, Vol. 116, No. 6, pp. 981-1022.
+\item	Gorodnichenko, Y. and Roland, G. (2011a). ‘Culture, wealth and the wealth of nations’, NBER working paper, No. 16368, pp. 1-50.
+\item	Gorodnichenko, Y. and Roland, G. (2011b). ‘Which dimensions of culture matter for long run growth’, American economic review papers and proceedings, Vol. 101, pp. 492-498.
+\item	Grossman, H.I. (2001). ‘The creation of effective property rights’, American economic review, Vol. 91, No. 2, pp. 347-352. 
+\item	Grossman, H.I. and Kim, M. (1995). ‘Swords of plowshares? A theory of the security of claims to property’, Journal of political economy, Vol. 103, No. 6, pp. 1275-1288.
+\item	Grossman, H.I. and Mejía, D. (2006). ‘The war against drug producers’, NBER working paper, No. 11141, pp. 1-24.
+\item	Hirschman, A. (1965). Journeys toward progress: studies of economic policy-making in Latin America. Garden City: Doubleday.
+\item	Ibánez, A. (2008). El desplazamiento forzoso en Colombia: un camino sin retorno hacia la pobreza. Bogotá: Ediciones Uniandes.
+\item	Ibánez, A. and Muñoz-Mora, J.C. (2010). ‘The persistence of land concentration in Colombia: what happened between 2000 and 2010’, FICHL publication series, No. 6, pp. 279-310.
+\item	Korf, B. (2005). ‘Rethinking the greed-grievance nexus: property rights and the political economy of war in Sri Lanka’, Journal of peace research, Vol. 42, No. 2, pp. 201-217.
+\item	LeGrand, C. (1994). ‘Colonización y violencia en Colombia: perspectivas y debate’, in A. Machado (ed.), El agro y la cuestión social. Bogotá: Tercer mundo editores.
+\item	Lorente, L., Salazar, A. and Gallo, A. (1985). ‘Distribución de la propiedad rural en Colombia’, Coyuntura Agropecuaria, Vol. 1, No. 4, pp. 199-225.
+\item	Mejía, D. and Restrepo, P. (2008). ‘The war on illegal drug production and tra?cking:
+an economic evaluation of plan colombia’, Policy research working paper, No. 4618, pp. 1-56.
+\item	Mejía, D. (2011). ‘The war on illegal drugs in producer and consumer countries: a simple analytical framework’, CESifo working paper, No. 2459, pp. 1-23.
+\item	North, D.C. (1990). Institutions, institutional change and economic performance (Cambridge: Cambridge university press).
+\item	North, D.C. (1994). ‘Economic performance through time’, American economic review, Vol. 84, No. 3, pp. 359-368.
+\item	North, D.C. and Thomas, R.P. (1973). The rise of the western world: a new economic history. Cambridge: Cambridge University Press.
+\item	Oquist, P. (1980). Violence, conflict and politics in Colombia: studies in social
+Discontinuity. New York: Academic Press.
+\item	Ortiz, C.H. (2002). ‘Luchando infructuosamente contra la hidra: un modelo sencillo del narcotráfico’, Cuadernos de economía, Vol. 21, No. 37, pp. 1-24.
+\item	Ortiz, C.H. (2003). ‘La guerra contra las drogas es contraproducente: un análisis económico de equilibrio general’, Lecturas de economía, No. 58, pp. 47-68.
+\item	Reyes, A. (2009). Guerreros y campesinos: el despojo de la tierra en Colombia. Bogotá: Editorial Norma.
+\item	Rocha, R. and Martinez, H. (2011). ‘Coca y deforestación en Colombia’, Archivos de economía, No. 375, pp. 1-23.
+\item	Rocha, R. and Ramírez, M.C. (2006). ‘Impactos de la economía ilícita de la droga: el caso de 
+Colombia’, Paper prepared for Development Alternatives DAI USAID. 
+\item	Rosenberg, N. and Bridzell, L.R. (1985). How the west grew rich?. New York: New York basic
+Books.
+\item	Thoumi, F.E. (2002). ‘Illegal Drugs in Colombia: from illegal economic boom to social crisis’, LACC working paper series, No. 6, pp. 1-29.
+\item	Velásquez, Guijo, A.P. (2007). ‘La formalidad en los derechos de propiedad: determinante de 
+la estrategia militar de los actores armados’, CEDE working paper, pp. 1-45.
+
+\end{enumerate}
+\end{footnotesize}
+
+\end{document}

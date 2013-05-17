@@ -1,0 +1,312 @@
+\documentclass[11pt]{amsart}
+
+\input{head}
+\usepackage{tabularx}
+\inputpaths{/Users/jcmunozmora/Documents/data/Tobon-Munoz-Dagust/tables/}
+\graphicspath{{maps/}{/Users/jcmunozmora/Documents/data/Tobon-Munoz-Dagust/figures/}}
+
+\begin{document}
+
+\begin{center}
+  \begin{huge}  The institutional dimension of illicit behavior:  \\[0.5cm] Evidence from the land property rights and  coca
+crops in Colombia  \end{huge}\\[2cm]   -Appendix - \\[4cm]
+
+{\large Juan Carlos Mu\~noz-Mora\footnote{European Center for Advanced Research in Economics and Statistics -ECARES . Universit\'e Libre de Bruxelles. 50, Avenue Roosevelt CP 139, 1050 Brussels, Belgium  e-mail:\textit{juan.carlos.munoz.mora@ulb.ac.be}.}  \\ \normalsize \textit{ECARES - Universit\'e Libre de Bruxelles}}\\[0.5cm]
+
+{\large Santiago Tob\'on-Zapata \footnote{ Universit\'e Catholique de Louvain. Department of Economics, Coll\'ege L. H. Dupriez, 3 Place Montesquieu B- 1348 Louvain-la-Neuve. Email: \textit{santiagotobon@gmail.com}} \\ \normalsize \textit{Universit\'e Catholique de Louvain}}\\[0.5cm]
+
+{\large Jesse Willem d'Anjou\footnote{Center for European Research in Microfinance, Universit\'e Libre de Bruxelles. 50, Avenue Roosevelt CP 114, 1050 Brussels, Belgium, e-mail:\textit{jesse.w.d.anjou@gmail.com}.}  \\ \normalsize \textit{CERMI - Universit\'e Libre de Bruxelles}}\\[1.5cm]
+{\large Draft Version }\\
+\large This version: \monthname , 2013
+\end{center}
+\pagebreak
+\tableofcontents
+\pagebreak
+
+
+
+\section{Data preparation}
+
+\subsection{Formality Index}
+
+\subsubsection{Cadastral information in Colombia}
+
+\subsubsection{Data cleaning}
+
+The criteria to drop some municipalities due to cadastral updating is based in the follows 
+
+\begin{itemize}
+\item[] If the last cadastral updating was before 1998 and 
+\end{itemize}
+
+
+\section{Extra descriptive statistics }
+
+\section{Static Model}
+
+
+\section{System GMM}
+
+We estimate a dynamic panel data model by using the System GMM estimator developed by  \citeA{Arellano:1995tj} and  \cite Blundell and Bond (1998) based on the Difference GMM estimator proposed earlier by Holtz-Eakin et al. (1988) and Arellano and Bond (1991). Both, Difference and System GMM estimators are specific applications of the generalized-method-of-moments (Hansen, 1982). In this section we explain the underlying details of the estimator in five steps. First, we outline a simple autoregressive panel data model and review inconsistency issues of common estimators. Second, considering the same simple autoregressive model, we explain the Difference GMM estimator. Third, we go further to construct the System GMM estimator. Fourth, we extend the explanation to multivariate models. Finally, we outline some issues about the conditions for optimality of the System GMM estimator and relevant tests. In most of the explanation we follow rigorous surveys of Difference and System GMM estimators made by Arellano and Honore (2001), Blundell et al. (2000) and Bond (2002).
+
+\subsection{Biases of standard panel data estimators}
+
+We consider a simple autoregressive panel data model of the form:
+\begin{equation}
+\label{modelar}
+\tag{1'}
+\begin{aligned}
+y_{it}&=\alpha y_{it-1} + \varepsilon_{it}\\
+\varepsilon_{it}&=\mu _{i}+v_{it}
+\end{aligned}
+\end{equation}
+where the following assumptions hold for the structure of the fixed effect and the idiosyncratic shock:
+\begin{equation}
+\label{as1}
+\tag{2'}
+E\left[\mu_{i}\right]=E\left[v_{i}\right]=E\left[\mu_{i}v_i\right]=0\text{; for $i=1,...,N$ and $t=2,...,T$}
+\end{equation}
+and
+\begin{equation}
+\label{as2}
+\tag{3'}
+E\left[v_{it}v_{is}\right]=0\text{; for $i=1,...,N$ and $\forall t\neq s$}
+\end{equation}
+
+Additionally, a further assumption regarding the initial conditions is also valid (Ahn and Schmidt, 1995):
+
+\begin{equation}
+\label{as3}
+\tag{4'}
+E\left[y_{i1}v_{it}\right]=0\text{; for $i=1,...,N$ and $t=2,...,T$}
+\end{equation}
+
+The introduction of a lag of the dependent variable in (\ref{model}) yields asymptotic bias in standard estimators such as OLS and Fixed Effects, which are both biased and inconsistent (see Baltagi (2008) and Blundell et al. (2000) for further details). In the OLS case, since $y_{it}$ is a function of $\mu_{i}$, $y_{it-1}$ is also a function of $\mu_{i}$ and thus it is correlated with the error term. Furthermore, in the case of the Fixed Effects estimator, the within transformation removes the fixed effects by taking the equation in levels $y_{it}=\alpha y_{it-1} + \mu_i+v_{it}$ and subtracting out the average over time $\bar y_{i.}=\alpha \bar y_{i.-1} +\mu_i +\bar v_{i.}$. The resulting model is of the form $(y_{it}-\bar y_{i.})=\alpha (y_{it-1}-\bar y_{i.-1})+ (v_{it}-\bar v_{i.})$. However, the idiosyncratic shock $v_{it-1}$ is correlated with $y_{it-1}$ and therefore in the transformed model $(y_{it-1}-\bar y_{i.-1})$ will be correlated with $(v_{it}-\bar v_{i.})$ (Nickel, 1981).
+
+Under an additional restriction of \emph{covariance stationarity}\footnote{\emph{Covariance stationarity} requires further assumptions on the structure of the error components, namely $E[v_{it}^2]=\sigma_v^2$ for $i=1,...,N$ and $E[\lambda_{i1}^2]=\sigma_v^2 / (1-\alpha^2)$ for $i=1,...,N$, $t=2,...,T$ where $\lambda_{i1}$ is such that the process is \emph{mean stationary} with $y_{i1}=\mu_{i}/(1-\alpha)+\lambda_{i1}$} the asymptotic bias of the OLS estimator is given by (Blundell et al., 2000; Sevestre and Trognon, 1985):
+\[
+\text{plim}\left(\hat\alpha_{OLS}-\alpha \right) =\left(1-\alpha\right)\frac{E[\mu_i^2]/E[v_{it}^2]}{E[\mu_i^2]/E[v_{it}^2]+\frac{1-\alpha}{1+\alpha}}
+\]
+and respectively, the asymptotic bias of the Fixed Effects estimator is (Nickel, 1981):
+\[
+\text{plim}\left(\hat\alpha_{FE}-\alpha \right)=-\frac{\frac{1+\alpha}{T-1}\left(1-\frac{1-\alpha^T}{T(1-\alpha)}\right)}{1-\frac{2\alpha}{(1-\alpha)(T-1)}\left(1-\frac{1-\alpha^T}{T(1-\alpha)}\right)}
+\]
+
+\subsection{Difference GMM estimator}
+
+The autoregressive panel data model described by (\ref{modelar}) to (\ref{as3}) imply the following $0.5(T-1)(T-2)$ orthogonality conditions, which are equivalent to those given by (\ref{momentsDiff}) in the paper except for the exclusion of other covariates different than the lag of the dependent variable:
+
+\begin{equation}
+\label{momentsDiffAp}
+\tag{5'}
+E\left[ y_{it-s}\Delta \varepsilon_{it}\right]=0 \text{; for $t=3,...,T$, $2\leq s \leq t-1$}
+\end{equation}
+
+The usefulness of these orthogonality conditions is straightforward when looking at the first-difference transformation of the model, aimed at eliminating the fixed effects. This is done by multiplying (\ref{modelar}) by $\mathbf{I}_N \otimes \mathbf{M}_{\Delta}$ with $\mathbf{I}_N$ being an identity matrix of order $N$ and $\mathbf{M}_{\Delta}$ a matrix with diagonal of $-1s$ and a sub-diagonal of $1s$ to the right. The transformation yields a model of the form\footnote{An alternative to first-differencing is the forward-orthogonal-deviations transformation in which the fixed effects are removed by subtracting the average of all available future observations instead of the previous one (Arellano and Bover, 1995). This alternative yields better results whenever there are gaps in unbalanced panels}:
+\[
+\Delta y_{it}=\alpha \Delta y_{it-1} +\Delta v_{it}
+\]
+
+The conditions in (\ref{momentsDiffAp}) can also be expressed as:
+
+\begin{equation*}
+E\left[ \mathbf{Z}'_{di}\mathbf{\Delta \varepsilon}_{i}\right]=0
+\end{equation*}
+where $\mathbf{\Delta \varepsilon}_{i}$ is the $T-2$ vector $(\Delta \varepsilon_{i3},\Delta \varepsilon_{i4},...,\Delta \varepsilon_{iT})'$ and $\mathbf{Z}_{di}$ is the $(T-2)\times 0.5(T-1)(T-2)$ instruments matrix given by:
+\[
+\mathbf{Z}_{di} = \left[ {\begin{array}{*{20}{c}}
+{{y_{i1}}}&0&0&{...}&0&{...}&0\\
+0&{{y_{i1}}}&{{y_{i2}}}&{...}&0&{...}&0\\
+.&.&.&{...}&.&{...}&.\\
+0&0&0&{...}&{{y_{i1}}}&{...}&{{y_{iT - 2}}}
+\end{array}} \right]
+\]
+or, when collapsing the matrix in order to reduce the instrument count, $\mathbf{Z}_{di}$ becomes a $(T-2)\times (T-2)$ matrix given by:
+\[
+\mathbf{Z}_{di} = \left[ {\begin{array}{*{20}{c}}
+{{y_{i1}}}&0&{...}&0\\
+{{y_{i1}}}&{{y_{i2}}}&{...}&0\\
+.&.&{...}&.\\
+{{y_{i1}}}&{{y_{i2}}}&{...}&{{y_{iT - 2}}}
+\end{array}} \right]
+\]
+
+The Difference GMM estimator solves:
+\[
+{{\hat \alpha }_{diff - GMM}} = \mathop {\arg \min }\limits_{\alpha  \in \Re } \mathbf{\Delta \varepsilon}' \mathbf{Z}_{d}{\mathbf{W}_{N}^d}\mathbf{Z}'_{d}\mathbf{\Delta \varepsilon} 
+\]
+for some symmetric, positive semi definite matrix $\mathbf{W}_{N}^d$, $\mathbf{Z}'_{d}$ the $0.5(T-1)(T-2)\times N(T-2)$ instruments matrix $(\mathbf{Z}'_{d1},\mathbf{Z}'_{d2},...,\mathbf{Z}'_{dN})$ or its $(T-2)\times N(T-2)$ collapsed counterpart and $\mathbf{\Delta \varepsilon}'$ the $N(T-2)$ vector $(\mathbf{\Delta \varepsilon}'_1,\mathbf{\Delta \varepsilon}'_2,...,\mathbf{\Delta \varepsilon}'_N)$. Finally, by letting $\mathbf{\Delta y}$ and $\mathbf{\Delta y}_{-1}$ be $N(T-2)$ vectors constructed in the same way as $\mathbf{\Delta \varepsilon}$ by stacking the $T-2$ vectors $\mathbf{\Delta y}'_i=(\Delta y_{i3},\Delta y_{i4},...,\Delta y_{iT})$ and $\mathbf{\Delta y}'_{i,-1}=(\Delta y_{i2},\Delta y_{i4},...,\Delta y_{iT-1})$ respectively across individuals, the estimator for $\alpha$ takes the form:
+\[
+{{\hat \alpha }_{diff - GMM}} = {\left( \mathbf{\Delta y}'_{-1}\mathbf{Z}_d \mathbf{W}_{N}^d \mathbf{Z}'_d \mathbf{\Delta y}_{-1} \right)^{ - 1}} \mathbf{\Delta y}'_{-1}\mathbf{Z}_d \mathbf{W}_{N}^d \mathbf{Z}'_d \mathbf{\Delta y} 
+\]
+
+The optimal two-step generalized-method-of-moments estimation is achieved with a choice of the weighting matrix $\mathbf{W}_{N}^d$ given by:
+\[
+\mathbf{W}_{N}^d=\left( \frac{1}{N} \sum\limits_{i=1}^{N} \mathbf{Z}'_{di} \hat{ \mathbf{\Delta \varepsilon}_i} \hat{ \mathbf{\Delta \varepsilon}'_i} \mathbf{Z}_{di} \right)^{-1}
+\]
+
+The first step comprises on using an identity weighting matrix to estimate $\hat \alpha$ consistently. Then, in a second step, the residuals from this estimation (i.e. $\hat{\mathbf{\Delta \varepsilon}_i}$) are used in the optimal choice of $\mathbf{W}_{N}^d$. This renders the two-step estimation of $ \alpha$.
+
+\subsection{System GMM estimator}
+
+I now consider an additional assumption by imposing a restriction on the initial conditions process generating $y_{i1}$ (Arellano and Bover, 1995; Blundell and Bond, 1998):
+\begin{equation}
+\label{as4}
+\tag{6'}
+E\left[\Delta y_{i2}\mu_{i}\right]=0\text{; for $i=1,...,N$}
+\end{equation}
+
+Together with (\ref{modelar}) to (\ref{as3}), assumption (\ref{as4}) imply an additional set of $T-2$ orthogonality conditions given by:
+\begin{equation}
+\label{momentsSysAp}
+\tag{7'}
+E\left[\Delta y_{it-1} \varepsilon_{it}\right]=0 \text{; for $t=3,...,T$}
+\end{equation}
+
+As in the case for the Difference GMM estimator, the conditions in (\ref{momentsSysAp}) can be expressed as:
+\begin{equation*}
+E\left[ \mathbf{Z}'_{li}\mathbf{ \varepsilon}_{i}\right]=0
+\end{equation*}
+where $\mathbf{\varepsilon}_{i}$ is the $T-2$ vector $( \varepsilon_{i3}, \varepsilon_{i4},..., \varepsilon_{iT})'$ and $\mathbf{Z}_{li}$ is the $(T-2)\times (T-2)$ instruments matrix given by:
+\[
+\mathbf{Z}_{li} = 
+\left[ {\begin{array}{*{20}{c}}
+{\Delta {y_{i2}}}&0&{...}&0\\
+0&{\Delta {y_{i3}}}&{...}&0\\
+.&.&{...}&.\\
+0&0&{...}&{\Delta {y_{iT - 1}}}
+\end{array}} \right]
+\]
+or, when collapsing the matrix in order to reduce the instrument count, $\mathbf{Z}_{li}$ becomes a $T-2$ column vector such that:
+\[
+\mathbf{Z}_{li} = 
+\left[ {\begin{array}{*{20}{c}}
+{\Delta {y_{i2}}}\\
+{\Delta {y_{i3}}}\\
+{...}\\
+{\Delta {y_{iT - 1}}}
+\end{array}} \right]
+\]
+
+Blundell and Bond (1998) propose to exploit jointly the moments conditions in (\ref{momentsDiffAp}) and (\ref{momentsSysAp}). To do so, the dataset is stacked with transformed and untransformed observations by multiplying it by $\mathbf{M}=\left(\mathbf{M}_{\Delta}\;\;\mathbf{I}\right)'$. This yields an augmented dataset of the form $ \mathbf{Y}_{i}=\left(\mathbf{\Delta} \mathbf{y}_{i}\;\;\mathbf{y}_i\right)'$ for each individual $i$, where $\mathbf{M}_{\Delta}$ is the matrix used in the first-difference transformation, a matrix with diagonal of $-1s$ and a sub-diagonal of $1s$ to the right. 
+
+By letting $\mathbf{E}_i$ be $\left(\mathbf{\Delta} \mathbf{\varepsilon}_{i}\;\;\mathbf{\varepsilon}_i\right)'$, conditions (\ref{momentsDiffAp}) and (\ref{momentsSysAp}) can be expressed as a system of equations of the form:
+\begin{equation*}
+E\left[ \mathbf{Z}'_{i}\mathbf{E}_{i}\right]=0
+\end{equation*}
+where $\mathbf{Z}_{i}$ considers both sets of instruments corresponding to (\ref{momentsDiffAp}) and (\ref{momentsSysAp}) respectively and so it is defined by the $2(T-2)\times (T-2)(0.5(T-1)+1)$ matrix:
+\[{\mathbf{Z}_i} = \left[ {\begin{array}{*{20}{c}}
+{{\mathbf{Z}_{di}}}&0\\
+0&{{\mathbf{Z}_{li}}}
+\end{array}} \right]\]
+
+The two-step System GMM estimator is then analogous to the one described for the Difference GMM. It solves:
+\[
+{{\hat \alpha }_{sys - GMM}} = \mathop {\arg \min }\limits_{\alpha  \in \Re } \mathbf{E}' \mathbf{Z}{\mathbf{W}_{N}^s}\mathbf{Z}'\mathbf{E} 
+\]
+for some symmetric, positive semi definite weighting matrix $\mathbf{W}_{N}^s$, $\mathbf{Z}'$ the $(T-2)(0.5(T-1)+1)\times 2N(T-2)$ or its $(T-1)\times 2N(T-2)$ counterpart for collapsed instruments matrix $(\mathbf{Z}'_{1},\mathbf{Z}'_{2},...,\mathbf{Z}'_{N})$ and $\mathbf{E}'$ the $N(T-2)$ vector $(\mathbf{E}'_1,\mathbf{E}'_2,...,\mathbf{E}'_N)$. The System GMM estimator is given by:
+\[
+{{\hat \alpha }_{sys - GMM}} = {\left( \mathbf{Y}'_{-1}\mathbf{Z} \mathbf{W}_{N}^s \mathbf{Z}' \mathbf{Y}_{-1} \right)^{ - 1}} \mathbf{Y}'_{-1}\mathbf{Z} \mathbf{W}_{N}^s \mathbf{Z}' \mathbf{Y} 
+\]
+where $\mathbf{Y}$ and $\mathbf{Y}_{-1}$ are $N(T-2)$ vectors constructed as $\mathbf{\Delta y}$ and $\mathbf{\Delta y}_{-1}$ for the Difference GMM estimator.
+
+Finally, the optimal two-step System GMM is obtained with a choice of the weighting matrix $\mathbf{W}_{N}^s$ given by:
+\[
+\mathbf{W}_{N}^s=\left( \frac{1}{N} \sum\limits_{i=1}^{N} \mathbf{Z}'_{i} \hat{ \mathbf{E}_i} \hat{ \mathbf{E}'_i} \mathbf{Z}_{i} \right)^{-1}
+\]
+where the residuals $\hat{ \mathbf{E}_i}$ are obtained from a first-step consistent estimation of $\alpha$.
+
+%Central Limit Theorems?
+
+\subsection{Multivariate models}
+
+Wenow move to an autoregressive panel data model of the form:
+\begin{equation}
+\label{modelarmul}
+\tag{8'}
+\begin{aligned}
+y_{it}&=\alpha y_{it-1} + \beta x_{it} + \varepsilon_{it}\\
+\varepsilon_{it}&=\mu _{i}+v_{it}
+\end{aligned}
+\end{equation}
+where $\mu _{i}$ and $v_{it}$ satisfy (\ref{as1}) to (\ref{as3}).
+
+In addition to the orthogonality conditions given by (\ref{momentsDiffAp}) and (\ref{momentsSysAp}), which remain valid, the presence of further explanatory variables in the model allows to increase the number of moment conditions depending on whether the $x_{it}$ process is strictly exogenous, predetermined or endogenous (see Blundell et al. (2000) for additional details). Recall the $x_{it}$ process is exogenous if:
+\begin{equation}
+\label{ruleexo}
+\tag{9'}
+E\left[x_{is}v_{it}\right]=0\text{; for $s=1,...,T$; $t=2,...,T$,}
+\end{equation}
+it is predetermined (or weakly exogenous) if:
+\begin{equation}
+\label{rulepre}
+\tag{10'}
+\begin{aligned}
+E\left[x_{is}v_{it}\right]&=0\text{; for $s=1,...,T$; $t=2,...,T$}\\
+E\left[x_{is}v_{it}\right]&\neq 0\text{; for $s=t+1,...,T$; $t=2,...,T$}
+\end{aligned}
+\end{equation}
+and it is endogenous if:
+\begin{equation}
+\label{ruleend}
+\tag{11'}
+\begin{aligned}
+E\left[x_{is}v_{it}\right]&=0\text{; for $s=1,...,t-1$; $t=2,...,T$}\\
+E\left[x_{is}v_{it}\right]&\neq 0\text{; for $s=t,...,T$; $t=2,...,T$}
+\end{aligned}
+\end{equation}
+
+The additional orthogonality conditions are implied by a combination of the errors component structure given by (\ref{as1}) to (\ref{as3}) and respectively (\ref{ruleexo}), (\ref{rulepre}) and (\ref{ruleend}). For the first-difference transformation of the model, if the $x_{it}$ process is strictly exogenous, the additional moment conditions are:
+\begin{equation}
+\label{momentsDiffexo}
+\tag{12'}
+E\left[x_{is}\Delta \varepsilon_{it}\right]=0 \text{; for $t=3,...,T$ and $1\leq s \leq T$,}
+\end{equation}
+on the other hand, if the $x_{it}$ process is predetermined:
+\begin{equation}
+\label{momentsDiffpre}
+\tag{13'}
+E\left[x_{it-s}\Delta \varepsilon_{it}\right]=0 \text{; for $t=3,...,T$ and $1\leq s\leq t-1$,}
+\end{equation}
+and if the $x_{it}$ process is endogenous, the respective additional orthogonality conditions are:
+\begin{equation}
+\label{momentsDiffend}
+\tag{14'}
+E\left[x_{it-s}\Delta \varepsilon_{it}\right]=0 \text{; for $t=3,...,T$ and $2\leq s \leq t-1$}
+\end{equation}
+
+Likewise, there are additional moment conditions for the equation in levels. If the $x_{it}$ process is strictly exogenous or predetermined, these conditions are:
+\begin{equation}
+\label{momentsSysexopre}
+\tag{15'}
+E\left[\Delta x_{it}\varepsilon_{it}\right]=0 \text{; for $t=2,...,T$,}
+\end{equation}
+and if the $x_{it}$ process is endogenous:
+\begin{equation}
+\label{momentsSysend}
+\tag{16'}
+E\left[\Delta x_{it-1}\varepsilon_{it}\right]=0 \text{; for $t=3,...,T$}
+\end{equation}
+
+\subsection{Optimal GMM and relevant tests}
+
+Although the Difference and System GMM estimators are both consistent under (\ref{momentsDiffAp}), (\ref{momentsSysAp}) and (\ref{momentsDiffexo}) to (\ref{momentsSysend}), provided the orthogonality conditions in (\ref{momentsSysAp}), (\ref{momentsSysexopre}) and (\ref{momentsSysend}) are valid,  System GMM is more efficient than Difference GMM. This issue has been supported with Montecarlo simulations studying the finite sample behavior of both estimators (see Blundell and Bond (1998), Blundell et al. (2000) for further details). The main reason for this gain in efficiency is that when explanatory variables show persistence or the number of time series observations is small relative to the number of individuals, the set of instruments of the Difference GMM estimator becomes weak since past levels of the variables carry out little information about future changes. Therefore, the informative power of additional instruments in the System GMM estimator takes relevance when performing the estimation (Arellano and Bover, 1995; Blundell and Bond, 1998; Blundell et al., 2000).
+
+Furthermore, the validity of the additional moment conditions given by (\ref{momentsSysAp}), (\ref{momentsSysexopre}) and (\ref{momentsSysend}) can be regarded as an empirical issue as they correspond to overidentifying restrictions (Blundell and Bond, 1998). Therefore, the choice of System over Difference GMM needs to be substantiated with overidentification tests not only for the full set of instruments but for the suspicious set of instruments included in the System GMM estimation as well. Hence the Hansen and Difference-in-Hansen tests, specifying the latter so as to focus exclusively on the extra moment conditions, are of remarkable importance when assessing the use of the System GMM estimator and both tests should be reported in every estimation obtained by using this approach. In particular, section \ref{overid} of the paper discusses the robustness of my results according to overidentifying restrictions.
+
+On the other hand, the presence of serial autocorrelation in the idiosyncratic disturbance term $v_{it}$ renders some specific lags, both levels and differences, invalid as instruments (Arellano and Bond, 1991). As pointed out by Roodman (2009b), the full disturbance term $\varepsilon_{it}$ is presumed to be autocorrelated since it contains the individual specific effect $\mu_i$, which is handled by the design of the Difference and System GMM estimators. However, if for instance the idiosyncratic disturbances exhibit serial autocorrelation of order $1$, then the first lag of the endogenous variable $y_{it-1}$, i.e. $y_{it-2}$ is also endogenous. To control for this situation, Arellano and Bond (1991) develop a test for serial autocorrelation of the idiosyncratic disturbance aside from the fixed effects. Specifically, the test is applied to residuals of the equations in differences. Hence, the validity of lags $2$ and further as instruments for endogenous variables requires no serial autocorrelation of order $2$. All results in section \ref{results} report Arellano and Bond (1992) tests for serial correlation of order $1$ and $2$ for all estimates and support the specification of the model as discussed in detail in section \ref{auto}.
+
+Moreover, a relevant issue to consider when following the generalized-method-of-moments approach is instrument proliferation. This is particularly important in the Difference or System GMM estimators as the number of instruments tends to increase largely. A first concern is a bias in coefficient estimates because instruments over-fit instrumented variables (Ziliak, 1997; Windmeijer, 2005). Second, Andersen and S\o rensen (1996) and Bowsher (2002) show that a large number of instruments undermines the Hansen test of overidentification restrictions by increasing the likelihood of false-positive results. There are two main techniques used to reduce the instrument count and overcome these difficulties. Either to use some out of all available lags as instruments or to combine them by collapsing the instruments matrix without dropping any lags to retain more information. Roodman (2009b) provides evidence in favor of the second alternative by using Montecarlo simulations. Collapsing the instruments matrix has been increasingly used in empirical studies and therefore We apply this technique in all estimations (see for instance Christiaensen et al. (2011), Heid et al. (2012) and Beck and Levine (2004) for applications using System GMM estimators).
+
+A final concern is related to a severe downward bias in standard errors when performing the two-step generalized-method-of-moments estimation in small samples. The reason for this bias is that the estimated variance does not take into consideration an extra variation due to the parameters used in the first-step weighting matrix (Windmeijer, 2005). This issue can be handled by implementing a correction proposed by Windmeijer (2005) in which the extra variation is estimated to adjust the variance. All results reported in section \ref{results} include the Windmeijer (2005) correction.
+
+
+
+\nocite{*}
+\bibliography{references}
+%
+\bibliographystyle{apacite}
+
+\newpage
+
+\end{document}

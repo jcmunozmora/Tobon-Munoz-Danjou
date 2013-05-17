@@ -1,0 +1,69 @@
+This is BibTeX, Version 0.99d (TeX Live 2012)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Tobon-Munoz-Dagust_2013.aux
+The style file: apacite.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Database file #1: references.bib
+apacite.bst [2012/02/25 v6.01 APA bibliography style]
+Warning--No institution in Diaz:2004te
+Warning--No address in Diaz:2004te
+Warning--No institution in DNP:2006ux
+Warning--No address in DNP:2006ux
+Warning--No institution in Fergusson:2012tx
+Warning--No address in Fergusson:2012tx
+Warning--No institution in GAO:2008uo
+Warning--No address in GAO:2008uo
+Warning--No institution in Mejia-Restrepo_2008
+Warning--No address in Mejia-Restrepo_2008
+Warning--No institution in R:2005tv
+Warning--No address in R:2005tv
+Warning--No institution in USDJ:1991vy
+You've used 85 entries,
+            6735 wiz_defined-function locations,
+            1791 strings with 24094 characters,
+and the built_in function-call counts, 156812 in all, are:
+= -- 19776
+> -- 1161
+< -- 7375
++ -- 7339
+- -- 180
+* -- 9881
+:= -- 28744
+add.period$ -- 366
+call.type$ -- 85
+change.case$ -- 1555
+chr.to.int$ -- 0
+cite$ -- 183
+duplicate$ -- 3845
+empty$ -- 6307
+format.name$ -- 1862
+if$ -- 30010
+int.to.chr$ -- 0
+int.to.str$ -- 170
+missing$ -- 0
+newline$ -- 2035
+num.names$ -- 698
+pop$ -- 2361
+preamble$ -- 1
+purify$ -- 440
+quote$ -- 0
+skip$ -- 10836
+stack$ -- 0
+substring$ -- 8184
+swap$ -- 2338
+text.length$ -- 312
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 7568
+warning$ -- 13
+while$ -- 755
+width$ -- 0
+write$ -- 2431
+(There were 13 warnings)
